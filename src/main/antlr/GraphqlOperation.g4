@@ -3,7 +3,7 @@ import GraphqlCommon;
 
 operationDefinition:
 selectionSet |
-operationType  name? variableDefinitions? directives? selectionSet;
+operationType  NAME? variableDefinitions? directives? selectionSet;
 
 variableDefinitions : '(' variableDefinition+ ')';
 
