@@ -4,7 +4,7 @@ operationType : SUBSCRIPTION | MUTATION | QUERY;
 
 description : stringValue;
 
-enumValue : enumValueName ;
+enumValue : NAME ;
 
 
 arrayValue: '[' value* ']';
@@ -30,7 +30,6 @@ argument : name ':' valueWithVariable;
 
 baseName: NAME | FRAGMENT | QUERY | MUTATION | SUBSCRIPTION | SCHEMA | SCALAR | TYPE | INTERFACE | IMPLEMENTS | ENUM | UNION | INPUT | EXTEND | DIRECTIVE;
 fragmentName: baseName | BooleanValue | NullValue;
-enumValueName: baseName | ON_KEYWORD;
 
 name: baseName | BooleanValue | NullValue | ON_KEYWORD;
 
